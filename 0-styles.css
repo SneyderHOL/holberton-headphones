@@ -72,8 +72,9 @@ template{display:none}
   --font-size-x-large: 2.5rem;
   --font-size-xx-large: 3.2rem;
 
-  --font-weight-regular: 400;
-  --font-weight-bold: 700;
+  --font-weight-light: 100;
+  --font-weight-regular: 300;
+  --font-weight-bold: 600;
 
   --line-height-small: 1.2;
   --line-height-base: 1.5;
@@ -86,8 +87,8 @@ template{display:none}
   --section-title-font-size: var(--font-size-xx-large);
   --section-title-font-weight: var(--font-weight-bold);
   --section-title-line-height: var(--line-height-small);
-  --section-title-margin: 22rem 0 0 0;
-  --section-title-color: var(--color-white);
+  --section-title-margin: 5rem 0 4rem;
+  --section-title-color: var(--color-black);
   --section-body-padding: 2rem 0 4rem;
 
   /** HEADER **/
@@ -136,7 +137,7 @@ body {
   color: var(--text-color);
   font-family: var(--font-family-base);
   font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-light);
   line-height: var(--line-height-base);
 }
 
@@ -148,10 +149,7 @@ h5,
 h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
-}
-
-h1 {
-  margin: 3rem auto 0 auto;
+  margin: 3rem auto;
 }
 
 p {
@@ -186,8 +184,8 @@ a {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .button {
@@ -324,29 +322,40 @@ a {
 
 .section-body {
   padding: var(--section-body-padding);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-inner {
   max-width: 710px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 /* Section HERO
 ============================= */
 
-.section-hero p {
+.header .section-inner .section-title,
+.header .section-inner p {
   color: var(--color-white);
 }
 
-.section-title + p {
+.header .section-inner .section-title {
+  margin: 22rem 0 0;
+}
+
+.header .section-title + p {
   font-weight: var(--font-weight-bold);
   margin: 0 auto 1rem auto;
 }
-.section-inner .button {
+
+.header .section-inner .button {
   filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
 }
 
-.section-inner p:last-child {
+.header .section-inner p:last-child {
   margin: 2.5rem auto 5rem auto;
 }
 
