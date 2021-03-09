@@ -137,7 +137,6 @@ body {
   color: var(--text-color);
   font-family: var(--font-family-base);
   font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-light);
   line-height: var(--line-height-base);
 }
 
@@ -327,7 +326,7 @@ a {
 }
 
 .section-inner {
-  max-width: 710px;
+  max-width: 680px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2%;
@@ -394,6 +393,13 @@ a {
 
 
 /* Responsiveness */
+
+@media (max-width: 770px) {
+  .header-container {
+    max-width: 680px;
+    margin: auto;
+  }
+}
 
 @media (max-width: 480px) {
   :root {
