@@ -486,6 +486,9 @@ a {
     max-width: 680px;
     margin: auto;
   }
+  .col-1-4 {
+    min-width: 192px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -528,6 +531,9 @@ a {
   }
   .row .col-1-4 {
     padding-bottom: 3rem;
+  }
+  .col-1-4 {
+    min-width: 192px;
   }
 }
 
