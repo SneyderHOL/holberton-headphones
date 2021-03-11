@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="zxx" dir="ltr">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -10,6 +10,13 @@
     <link rel='stylesheet' href='images/holberton_school-icon/style.css'>
   </head>
   <body>
+    <!-- Skip links -->
+    <nav aria-label="Skip links">
+      <ul class="off-screen">
+        <li><a href="#a11y-primary-nav" class="skip-link">Skip to primary navigation</a></li>
+        <li><a href="#a11y-main-content" class="skip-link">Skip to main content</a></li>
+      </ul>
+    </nav>
     <!-- Header -->
     <header class="header">
       <div class="container">
@@ -21,7 +28,7 @@
               <img src="images/logo_headphones.png" alt="Headphones logo" width="162" height="32">
             </a>
           </div>
-          <nav class="navbar-menu">
+          <nav class="navbar-menu" id="a11y-primary-nav" tabindex="-1">
             <ul class="nav">
               <li class="nav-item">
                 <a href="#" class="nav-link">what we do</a>
@@ -53,7 +60,7 @@
         </div>
       </section>
     </header>
-    <main>
+    <main id="a11y-main-content" tabindex="-1">
       <!-- What we do section -->
       <section id="what-we-do" class="section section-what-we-do">
         <div class="container">
@@ -172,12 +179,10 @@
                     </span>
                   </div>
                 </div>
-                <legend class="visually-hidden">Your message</legend>
                 <div class="form-group">
                   <div class="form-field">
                     <span class="form-field-container">
-                      <input type="text" name="your-message" id="your-message" minlength="10" 
-                      accesskey="m" ></input>
+                      <input type="text" name="your-message" id="your-message" minlength="10" accesskey="m">
                       <label for="your-message">Message</label>
                     </span>
                   </div>
